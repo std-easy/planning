@@ -10,6 +10,6 @@ A clean way to convert a enum class to the string representation of the values w
 
 ### Better `std::tuple`
 
-`std::pair` is nice with `val.first`, `val.second`. `std::get<0>(tup)` is gross. Why doesn't std::tuple support first, second, third ... ninth at least? 
+`std::pair` is nice with `val.first`, `val.second`. `std::get<n>(tup)` is gross. Why doesn't std::tuple support first, second, third ... ninth at least? 
 
 I'd imagine the lion's share of std::tuple usage is for tuples with less then nine items.
