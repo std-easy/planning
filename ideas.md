@@ -13,3 +13,8 @@ A clean way to convert a enum class to the string representation of the values w
 `std::pair` is nice with `val.first`, `val.second`. `std::get<n>(tup)` is gross. Why doesn't std::tuple support first, second, third ... ninth at least? 
 
 I'd imagine the lion's share of std::tuple usage is for tuples with less then nine items.
+
+
+### Nice templatable ring-buffer
+
+I regularly need a fifo, with configurable overwriting semantics and conversion to more conventional types (std::vector, etc...). It'd be nice to not need to continuously reimplemented it.
