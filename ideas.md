@@ -18,3 +18,7 @@ I'd imagine the lion's share of std::tuple usage is for tuples with less then ni
 ### Nice templatable ring-buffer
 
 I regularly need a fifo, with configurable overwriting semantics and conversion to more conventional types (std::vector, etc...). It'd be nice to not need to continuously reimplemented it.
+
+### WTF is up with std::vector and fill
+
+std::array has a fill(TYPE) member. Why the fuck doesn't std::vector (and most general container type, really). If it's a container type, it should support variable.fill(TYPE& val);
